@@ -12,7 +12,7 @@ class RegistrationPage(BasePage):
             'password': '//input[@id="password"]',
             'confirmation': '//input[@id="confirmation"]',
             'newsletter_chbx': '//input[@id="is_subscribed"]',
-            'register_btn': 'button[@title="Register"]',
+            'register_btn': '//button[@title="Register" and @type="submit"]',
             'password_error': '//div[@id="advice-validate-cpassword-confirmation"]'
         }
 

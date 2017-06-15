@@ -27,4 +27,4 @@ class TestRegistration(unittest.TestCase):
 
         page.find_element('register_btn').click()
 
-        self.assertEqual()
+        self.assertTrue(page.is_password_validation_error)
