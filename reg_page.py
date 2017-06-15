@@ -13,7 +13,11 @@ class RegistrationPage(BasePage):
             'confirmation': '//input[@id="confirmation"]',
             'newsletter_chbx': '//input[@id="is_subscribed"]',
             'register_btn': '//button[@title="Register" and @type="submit"]',
-            'password_error': '//div[@id="advice-validate-cpassword-confirmation"]'
+
+            'password_error': '//div[@id="advice-validate-cpassword-confirmation"]',
+
+            'menu': '//a[contains(@class,"skip-account")]',
+            'menu_register': '//div[@id="header-account"]//a[text()="Register"]',
         }
 
     @property
@@ -24,3 +28,8 @@ class RegistrationPage(BasePage):
             return False
         else:
             return True
+
+    def open(self):
+        self.browser.get(self.url)
+        self.find_element('menu').click()
+        self.find_element('menu_register').click()
