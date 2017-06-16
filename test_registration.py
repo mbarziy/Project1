@@ -37,7 +37,7 @@ class TestRegistration(unittest.TestCase):
         reg_data={
             'first_name': 'Vova',
             'last_name': 'Zilvova',
-            'email': 'vovan+{}@gmail.com'.format(randint(1, 100)),
+            'email': 'vovan+{}@gmail.com'.format(randint(0, 100)),
             'password': 'pass1',
             'confirmation': 'pass1'
         }
