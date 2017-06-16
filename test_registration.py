@@ -38,8 +38,8 @@ class TestRegistration(unittest.TestCase):
             'first_name': 'Vova',
             'last_name': 'Zilvova',
             'email': 'vovan+{}@gmail.com'.format(randint(0, 100)),
-            'password': 'pass1',
-            'confirmation': 'pass1'
+            'password': 'Pass1234',
+            'confirmation': 'Pass1234'
         }
 
         for field, value in reg_data.items():
